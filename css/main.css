@@ -308,6 +308,7 @@ h5 {
 .about-content {
   flex: 60%;
   padding-right: 3rem;
+  text-align: center;
 }
 
 .about-skills {
@@ -347,6 +348,18 @@ h5 {
   position: absolute;
   width: 100%;
   z-index: -1;
+}
+
+.skill-list {
+  margin-bottom: 1rem;
+}
+
+.tools {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #2f3135;
 }
 
 .about-download-btn {
