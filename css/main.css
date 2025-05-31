@@ -283,11 +283,12 @@ h5 {
 
 /* About section */
 .about {
-  padding: 10rem 0;
+  padding: rem 0;
 }
 
 .about-title {
   margin-bottom: 4rem;
+  margin-top: 4rem
 }
 
 .about-row {
@@ -296,6 +297,26 @@ h5 {
   flex-wrap: wrap;
   row-gap: 6rem;
   margin-bottom: 8rem;
+  align-items: center; /* biar vertikal center */
+  gap: 4rem; /* jarak antar kolom */
+}
+
+.about-left {
+  flex: 1 1 50%;
+  padding-right: 3rem;
+  text-align: left;
+}
+
+.about-right {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.about-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .about-descr {
@@ -320,7 +341,7 @@ h5 {
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 0.1rem;
 }
 
 .skill-title,
@@ -401,15 +422,37 @@ h5 {
   color: var(--gray-text-color);
 }
 
+/* Untuk section Testing Expertise */
+#testing-expertise .section-title {
+  margin-bottom: 4rem; /* beri jarak bawah judul */
+  margin-top: 4rem;
+ 
+}
+#testing-expertise .services-row {
+  margin-top: 4rem; /* beri jarak atas isi section */
+
+}
+
+/* Untuk section Software & Tools Proficiency */
+#skills .skills-title {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#skills .skills-row {
+  margin-top: 2rem;
+}
+
 /* Works */
 .projects {
-  padding: 10rem 0;
+  padding: 5rem 0;
   background-color: var(--primary-bg-color);
 }
 
 .projects-title {
   text-align: center;
   margin-bottom: 4rem;
+  background-color: var(--primary-bg-color);
 }
 
 .projects-row {
@@ -492,6 +535,43 @@ h5 {
   margin-top: 0;
   text-align: left;
 }
+
+/* Project Tabs */
+.projects-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.tab-btn {
+  font-size: 1.4rem;
+  padding: 1rem 2.4rem;
+  border: 2px solid var(--primary-accent);
+  background-color: transparent;
+  color: var(--primary-accent);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background-color: var(--primary-accent);
+  color: var(--white-color);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 
 /* Contact */
 .contact {
@@ -677,4 +757,10 @@ h5 {
   80% {
     top: 0;
   }
+}
+
+
+.services
+{
+  background-color: var(--primary-bg-color);
 }

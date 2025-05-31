@@ -68,7 +68,10 @@
           <div class="hero-content">
             <span class="hero-greeting"> Hello, I am</span>
             <h1 class="hero-heading">Natasha Callula</h1>
-            <span class="hero-heading-subtitle">Software Quality Assurance Enthusiast</span>
+           <span class="hero-heading-subtitle">
+           <span id="typed-text"></span>
+            </span>
+
 
             <div class="about-social-list">
               <div class="social-links-row">
@@ -99,101 +102,157 @@
               <a href="#contact" class="btn btn-white">Contact Me</a>
             </div>
           </div>
-          <div class="hero-img">
-            <img
-              src="img/hero/nat.png"
-              alt="Picture of Christian Buehner taken from Unsplash</a>
-              "
-            />
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-title">
-          <h2 class="title">About Me</h2>
-        </div>
-        <div class="about-row">
-          <div class="about-content">
-            <p class="about-descr">
-              I am a passionate QA enthusiast with hands-on project experience and a strong foundation built through multiple bootcamps. 
-              With a Physics degree specializing in systems, instrumentation, and electronics, 
-              I bring analytical thinking, adaptability, and precision to every project. 
-              I am eager to contribute to software development by ensuring the highest quality standards. <br />
-      
-            </p>
-            <div class="about-download-btn">
-              <a href="https://drive.google.com/file/d/1BV7X2QFMyh2OwVhztwlksczlNRGqGZ3V/view?usp=drive_link" class="btn btn-white">Download CV</a>
-            </div>
-          </div>
-          <div class="about-skills">
-            <div class="skill">
-              <div class="skill-list"></div>
-              <div class="skill-title">Agile Methodologies</div>
-              <div class="tools">Scrum, Qase.io, Jira, ClickUp, Notion, Spreadsheet-based Test Management</div>
-            </div>
-            <div class="skill">
-              <div class="skill-list"></div>
-              <div class="skill-title">Website Testing</div>
-              <div class="tools">Cypress, Selenium, IntelliJ IDEA, Visual Studio Code, JavaScript, Python</div>
-            </div>
-            <div class="skill">
-              <div class="skill-list"></div>
-              <div class="skill-title">API Testing</div>
-              <div class="tools">Postman</div>
-            </div>
-            <div class="skill">
-              <div class="skill-list"></div>
-              <div class="skill-title">Mobile Testing</div>
-              <div class="tools">Katalon Studio, Android Studio, Appium</div>
-            </div>
-          </div>
-        </div>
-        <div class="services-row">
-          <div class="service-card" data-aos="fade-down">
-            <img class="service-card-img" src="img/services/01.svg" alt="" />
-            <h3 class="service-card-title"> Agile Testing Methodologies</h3>
-            <p>
-              During bootcamp projects, I practiced Agile testing by participating in simulated sprint cycles. 
-              I collaborated with team members, executed manual tests, reported bugs, 
-              and adapted to evolving requirements, ensuring continuous software quality improvement.
-            </p>
-          </div>
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-title">
+      <h2 class="title">About Me</h2>
+    </div>
 
-          <div class="service-card" data-aos="fade-down">
-            <img class="service-card-img" src="img/services/02.svg" alt="" />
-            <h3 class="service-card-title">Comprehensive Software Quality Assurance</h3>
-            <p>
-              I specialize in manual and basic automated testing, 
-              with experience in executing test cases, bug reporting, and API validation using Postman. 
-              I am committed to maintaining software functionality, performance, 
-              and reliability through structured testing practices.
-            </p>
-          </div>
-
-          <div class="service-card" data-aos="fade-down">
-            <img class="service-card-img" src="img/services/03.svg" alt="" />
-            <h3 class="service-card-title">User-Centric Testing Approach</h3>
-            <p>
-              I prioritize usability and accessibility through comprehensive web and mobile testing, 
-              ensuring early detection of issues and contributing to a seamless and satisfying user experience.
-            </p>
-          </div>
+    <div class="about-row" style="display: flex; align-items: flex-start; gap: 2rem;">
+      <!-- Kiri: Teks + CV -->
+      <div class="about-content" style="flex: 1; margin-top: 20px;">
+        <p class="about-descr">
+          I'm a Software Quality Assurance enthusiast with a background in Physics 
+          and practical experience from multiple bootcamps. 
+          I bring analytical thinking, adaptability, and attention 
+          to detail into every project—driven by a passion to ensure 
+          software works reliably and meets user expectations.
+        </p>
+        <div class="about-download-btn">
+          <a href="https://drive.google.com/file/d/1BV7X2QFMyh2OwVhztwlksczlNRGqGZ3V/view?usp=drive_link" 
+             class="btn btn-white" 
+             style="margin-top: 20px;">Download CV</a>
         </div>
       </div>
-    </section>
 
-    <section id="projects" class="projects">
-      <div class="container container-lg">
-        <div class="projects-title">
-          <h2 class="title">Project</h2>
+      <!-- Kanan: Foto -->
+      <div class="about-img" style="flex: 1; text-align: center;">
+        <img src="img/hero/nat.png" alt="Picture of Natasha Callula" style="max-width: 100%; height: auto; border-radius: 10px;" />
+      </div>
+    </div>
+  </div>
+
+    <!-- Tambahan: Testing Expertise (dalam section About) -->
+    <div class="testing-expertise" style="margin-top: 4rem;">
+      <div class="section-title">
+        <h2 class="title" style="margin-bottom: 4rem;">Testing Expertise & Practices</h2>
+      </div>
+
+      <div class="services-row" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+        <div class="service-card" data-aos="fade-down" style="flex: 1; min-width: 250px;">
+          <img class="service-card-img" src="img/services/01.svg" alt="" />
+          <h3 class="service-card-title">Agile Testing Methodologies</h3>
+          <p>
+            During bootcamp projects, I joined Agile-style sprints where 
+            I worked closely with the team to run manual tests, 
+            report bugs, and adapt to changes to keep the app quality on track.
+          </p>
         </div>
 
-        <div class="projects-row">
-          <div class="project-box">
-            <a href="https://github.com/natashacallula/Automation-Testing-Voila.id">
+        <div class="service-card" data-aos="fade-down" style="flex: 1; min-width: 250px;">
+          <img class="service-card-img" src="img/services/02.svg" alt="" />
+          <h3 class="service-card-title">Comprehensive Software Quality Assurance</h3>
+          <p>
+            I focus on manual testing with a bit of automation. 
+            I write and run test cases, report bugs, 
+            and use Postman for API testing to make sure everything works as expected.
+          </p>
+        </div>
+
+        <div class="service-card" data-aos="fade-down" style="flex: 1; min-width: 250px;">
+          <img class="service-card-img" src="img/services/03.svg" alt="" />
+          <h3 class="service-card-title">User-Centric Testing Approach</h3>
+          <p>
+            I test with the user in mind—whether it’s web 
+            or mobile—to help ensure the app is smooth, easy to use, and catches issues early.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="skills" class="skills" style="margin-top: 8rem;">
+  <div class="container">
+    <div class="skills-title">
+      <h2 class="title" style="margin-bottom: 4rem;">Software & Tools Proficiency</h2>
+    </div>
+
+    <!-- ROW PERTAMA -->
+    <div class="skills-row" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/qase.io.png" alt="Qase" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">Qase.io</p>
+      </div>
+
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/jira.png" alt="Jira" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">Jira</p>
+      </div>
+
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/Clickup.png" alt="ClickUp" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">ClickUp</p>
+      </div>
+
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/spreadsheet.png" alt="Google Sheet" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">Google Sheet</p>
+      </div>
+
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/Vscode.png" alt="VS Code" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">VS Code</p>
+      </div>
+    </div>
+
+    <!-- ROW KEDUA -->
+    <div class="skills-row" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/cypress.png" alt="Cypress" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">Cypress</p>
+      </div>
+
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/Javascript.png" alt="JavaScript" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">JavaScript</p>
+      </div>
+
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/postman.png" alt="Postman" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">Postman</p>
+      </div>
+
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/katalon.png" alt="Katalon Studio" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">Katalon Studio</p>
+      </div>
+
+      <div class="skill-item" style="width: 120px; text-align: center;">
+        <img src="img/tools/AndroidStudio.png" alt="Android Studio" style="width: 80px; height: auto;" />
+        <p style="margin-top: 0.7rem; font-size: 16px; font-weight: 500;">Android Studio</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="container container-lg">
+    <div class="projects-title">
+      <h2 class="title">Projects</h2>
+    </div>
+
+    <!-- Projects utama: tampilkan langsung semua project -->
+    <div class="projects-row">
+      <div class="project-box">
+         <a href="https://github.com/natashacallula/Automation-Testing-Voila.id">
               <img class="project-img" src="img/works/voila.jpg" alt="" />
               <div class="project-mask">
                 <div class="project-caption">
@@ -260,7 +319,61 @@
           </div>
         </div>
       </div>
-    </section>
+
+
+      <div style="text-align:center; margin-top: 10px;">
+      <button id="toggleMoreProjectsBtn" class="btn btn-white">View More</button>
+    </div>
+  </div>
+</section>
+
+<section id="more-projects" class="projects" style="display: none;">
+  <div class="container container-lg">
+    <div class="projects-title">
+      <h2 class="title">More Projects</h2>
+    </div>
+
+    <div class="projects-row">
+      <div class="project-box">
+        <a href="https://github.com/natashacallula/orangeHRM">
+          <img class="project-img" src="img/works/hrm.jpg" alt="" />
+          <div class="project-mask">
+            <div class="project-caption">
+              <h5 class="white">Automated Website Testing</h5>
+              <p class="white">Orangehrm.com</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="project-box">
+        <a href="https://github.com/natashacallula/FinalProject-QA-Jubelio">
+          <img class="project-img" src="img/works/jubelio.jpg" alt="" />
+          <div class="project-mask">
+            <div class="project-caption">
+              <h5 class="white">Automated Website Testing</h5>
+              <p class="white">Jubelio.com</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="project-box">
+            <a href="https://github.com/natashacallula/Automation-saucedemo-bdd-cypress">
+              <img class="project-img" src="img/works/sauce.jpg" alt="" />
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Automated website testing using Cypress with Gherkin syntax (BDD)</h5>
+                  <p class="white">Saucedemo.com</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+      
+
+
+</section>
 
     <section id="contact" class="contact">
       <div class="container">
@@ -309,7 +422,7 @@
           </div>
 
           <div class="footer-copyright">
-            <p>&copy; Copyright John 2024</p>
+            <p>&copy; Copyright 2025</p>
           </div>
         </div>
       </div>
@@ -328,5 +441,38 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="js/main.js"></script>
+
+<script>
+  const btn = document.getElementById('toggleMoreProjectsBtn');
+  const moreSection = document.getElementById('more-projects');
+
+  btn.addEventListener('click', () => {
+    if (moreSection.style.display === 'none' || moreSection.style.display === '') {
+      moreSection.style.display = 'block';
+      btn.textContent = 'View Less';
+    } else {
+      moreSection.style.display = 'none';
+      btn.textContent = 'View More';
+      // Scroll ke atas section projects biar enak dilihat
+      document.getElementById('projects').scrollIntoView({behavior: 'smooth'});
+    }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+  var typed = new Typed("#typed-text", {
+    strings: ["Software Quality Assurance Enthusiast", "QA Engineer in the Making", "Loves Bug Hunting!"],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true
+  });
+</script>
+
+
+
+
   </body>
 </html>
